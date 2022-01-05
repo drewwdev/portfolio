@@ -80,8 +80,9 @@ function Portfolio() {
               </a>
               <p>
                 This is a full stack CRUD web application that I made at
-                Suncoast Developer's Guild as a homework assignment. It was made
-                with mobile first design in mind as well.
+                Suncoast Developer's Guild as a homework assignment. It uses
+                React as well. It was made with mobile first design in mind as
+                well.
               </p>
             </div>
             <img
