@@ -1,16 +1,19 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Subtitle from "./components/Subtitle";
-import Title from "./components/Title";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 function App() {
   return (
-    <div className="flex flex-col h-screen">
-      <Header />
-      <Title />
-      <Subtitle />
-      <Footer />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/About" element={<About />} />
+      </Routes>
+    </>
   );
 }
 
