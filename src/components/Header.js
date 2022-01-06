@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="flex justify-between m-4 mx-12 text-cyan-600 text-lg font-bold">
+    <div className="sm:flex justify-between m-4 mx-12 text-cyan-600 text-lg font-bold">
       <Link to="/">Drew Wilson</Link>
       <ul className="flex space-x-4">
         <li>

@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div className="mt-auto bg-slate-700 text-white h-auto">
-      <div className="flex mx-12 justify-center">
+      <div className="flex sm:mx-40 justify-center">
         <img
           className="w-40 h-40 mx-4 my-8 rounded-full"
           alt="Headshot of Drew Wilson"
@@ -12,7 +12,7 @@ function Footer() {
         <div className="flex-col">
           <p className="flex flex-wrap my-8">
             I am a front-end web developer who enjoys building dynamic web
-            applications that are accessible and beautiful.
+            applications that are functional and accessible.
           </p>
           <ul className="">
             <li>
