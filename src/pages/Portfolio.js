@@ -1,14 +1,11 @@
 import React from "react";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import Reactocat from "../images/reacto-cats.png";
 import Cryptoticker from "../images/cryptoticker.png";
 import CoffeeCrumbs from "../images/coffee-crumbs.png";
 
 function Portfolio() {
   return (
-    <div className="flex flex-col h-screen">
-      <Header />
+    <div>
       <p className="font-bold text-center mt-20 text-4xl">
         Front-End Development Portfolio
       </p>
@@ -93,7 +90,6 @@ function Portfolio() {
           </li>
         </ul>
       </div>
-      <Footer />
     </div>
   );
 }
