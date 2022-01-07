@@ -5,7 +5,8 @@ import Github from "../images/github.png";
 
 function Contact() {
   return (
-    <div className="flex justify-center my-20">
+    <div className="flex flex-col items-center my-20">
+      <p className="font-bold text-4xl">Contact me</p>
       <ul className="flex-col">
         <li className="flex my-8">
           <img className="w-6 mr-4" alt="" src={Email} />

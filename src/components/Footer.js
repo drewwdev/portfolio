@@ -14,7 +14,7 @@ function Footer() {
             I am a front-end web developer who enjoys building dynamic web
             applications that are functional and accessible.
           </p>
-          <ul className="">
+          <ul className="my-8">
             <li>
               <a className="underline" href="https://github.com/drewwdev">
                 Github
