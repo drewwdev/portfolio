@@ -2,7 +2,7 @@ import Reactocat from "../images/reacto-cats.png";
 import Cryptoticker from "../images/cryptoticker.png";
 import CoffeeCrumbs from "../images/coffee-crumbs.png";
 
-const portfolioLinks = [
+const portfolioData = [
   {
     title: "Reactocats",
     link: "https://dwilson-reactocats.netlify.app/",
@@ -16,7 +16,7 @@ const portfolioLinks = [
         site by Github. It was made with mobile first design in mind.
       </p>
     ),
-    src: { Reactocat },
+    src: Reactocat,
     url: "/portfolio/reactocats",
     alt: "Screenshot of cloned website.",
   },
@@ -36,7 +36,7 @@ const portfolioLinks = [
         crypto API. It was made with mobile first design in mind as well.
       </p>
     ),
-    src: { Cryptoticker },
+    src: Cryptoticker,
     url: "/portfolio/cryptoticker",
     alt: "Screenshot of cryptotracking website.",
   },
@@ -50,10 +50,10 @@ const portfolioLinks = [
         was made with mobile first design in mind as well.
       </p>
     ),
-    src: { CoffeeCrumbs },
+    src: CoffeeCrumbs,
     url: "/portfolio/coffee-crumbs",
     alt: "Screenshot of Coffee Crumbs website.",
   },
 ];
 
-export default portfolioLinks;
+export default portfolioData;

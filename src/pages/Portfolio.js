@@ -1,7 +1,5 @@
 import React from "react";
-import Reactocat from "../images/reacto-cats.png";
-import Cryptoticker from "../images/cryptoticker.png";
-import CoffeeCrumbs from "../images/coffee-crumbs.png";
+import portfolioData from "../content/portfolioData";
 import { Link } from "react-router-dom";
 
 function Portfolio() {
@@ -12,89 +10,21 @@ function Portfolio() {
       </p>
       <div className="flex justify-center">
         <ul className="flex-col">
-          <li className="sm:flex my-8">
-            <div className="w-96 my-8">
-              <a
-                href="https://dwilson-reactocats.netlify.app/"
-                className="font-bold underline"
-              >
-                Reactocats
-              </a>
-              <p>
-                This is a clone website that I made at Suncoast Developer's
-                Guild as a homework assignment. It is based off of{" "}
-                <a
-                  className="underline font-bold"
-                  href="https://octodex.github.com"
-                >
-                  this
-                </a>{" "}
-                site by Github. It was made with mobile first design in mind.
-              </p>
-            </div>
-            <Link to="/portfolio/reactocats" className="">
-              <img
-                className="w-96"
-                alt="Screenshot of cloned website."
-                src={Reactocat}
-              />
-            </Link>
-          </li>
-
-          <li className="sm:flex my-8">
-            <div className="w-96 my-8">
-              <a
-                href="https://dwilson-cryptotracker.netlify.app/"
-                className="font-bold underline"
-              >
-                CryptoTicker
-              </a>
-              <p>
-                This is a crypto tracking website that I made at Suncoast
-                Developer's Guild as a homework assignment. It pulls JSON data
-                from{" "}
-                <a
-                  className="underline font-bold"
-                  href="https://api.coincap.io/v2/assets"
-                >
-                  this
-                </a>{" "}
-                crypto API. It was made with mobile first design in mind as
-                well.
-              </p>
-            </div>
-            <Link to="/portfolio/cryptoticker" className="">
-              <img
-                className="w-96"
-                alt="Screenshot of cryptotracking website."
-                src={Cryptoticker}
-              />
-            </Link>
-          </li>
-
-          <li className="sm:flex my-8">
-            <div className="w-96 my-8">
-              <a
-                href="https://bakeriesandcoffeeshops.herokuapp.com/"
-                className="font-bold underline"
-              >
-                Coffee Crumbs
-              </a>
-              <p>
-                This is a full stack CRUD web application that I made at
-                Suncoast Developer's Guild as a homework assignment. It uses
-                React as well. It was made with mobile first design in mind as
-                well.
-              </p>
-            </div>
-            <Link to="/portfolio/coffee-crumbs" className="">
-              <img
-                className="w-96"
-                alt="Screenshot of Coffee Crumbs website."
-                src={CoffeeCrumbs}
-              />
-            </Link>
-          </li>
+          {portfolioData.map((data) => {
+            return (
+              <li className="sm:flex my-8">
+                <div className="w-96 my-8">
+                  <a href={data.link} className="font-bold underline">
+                    {data.title}
+                  </a>
+                  {data.description}
+                </div>
+                <Link to={data.url}>
+                  <img className="w-96" alt={data.alt} src={data.src} />
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>
