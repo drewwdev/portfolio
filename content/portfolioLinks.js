@@ -17,6 +17,8 @@ const portfolioLinks = [
       </p>
     ),
     src: { Reactocat },
+    url: "/portfolio/reactocats",
+    alt: "Screenshot of cloned website.",
   },
   {
     title: "CryptoTicker",
@@ -35,6 +37,8 @@ const portfolioLinks = [
       </p>
     ),
     src: { Cryptoticker },
+    url: "/portfolio/cryptoticker",
+    alt: "Screenshot of cryptotracking website.",
   },
   {
     title: "Coffee Crumbs",
@@ -47,6 +51,8 @@ const portfolioLinks = [
       </p>
     ),
     src: { CoffeeCrumbs },
+    url: "/portfolio/coffee-crumbs",
+    alt: "Screenshot of Coffee Crumbs website.",
   },
 ];
 
