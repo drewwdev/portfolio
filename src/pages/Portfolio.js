@@ -2,6 +2,7 @@ import React from "react";
 import Reactocat from "../images/reacto-cats.png";
 import Cryptoticker from "../images/cryptoticker.png";
 import CoffeeCrumbs from "../images/coffee-crumbs.png";
+import { Link } from "react-router-dom";
 
 function Portfolio() {
   return (
@@ -31,11 +32,13 @@ function Portfolio() {
                 site by Github. It was made with mobile first design in mind.
               </p>
             </div>
-            <img
-              className="w-96"
-              alt="Screenshot of cloned website."
-              src={Reactocat}
-            />
+            <Link to="/portfolio/reactocats" className="">
+              <img
+                className="w-96"
+                alt="Screenshot of cloned website."
+                src={Reactocat}
+              />
+            </Link>
           </li>
 
           <li className="sm:flex my-8">
@@ -60,11 +63,13 @@ function Portfolio() {
                 well.
               </p>
             </div>
-            <img
-              className="w-96"
-              alt="Screenshot of cryptotracking website."
-              src={Cryptoticker}
-            />
+            <Link to="/portfolio/cryptoticker" className="">
+              <img
+                className="w-96"
+                alt="Screenshot of cryptotracking website."
+                src={Cryptoticker}
+              />
+            </Link>
           </li>
 
           <li className="sm:flex my-8">
@@ -82,11 +87,13 @@ function Portfolio() {
                 well.
               </p>
             </div>
-            <img
-              className="w-96"
-              alt="Screenshot of Coffee Crumbs website."
-              src={CoffeeCrumbs}
-            />
+            <Link to="/portfolio/coffee-crumbs" className="">
+              <img
+                className="w-96"
+                alt="Screenshot of Coffee Crumbs website."
+                src={CoffeeCrumbs}
+              />
+            </Link>
           </li>
         </ul>
       </div>

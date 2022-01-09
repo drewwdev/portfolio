@@ -8,7 +8,7 @@ function Header() {
         Drew Wilson
       </Link>
       <ul className="flex space-x-4">
-        <li className="hover:text-cyan-800 hover:underline focus:underline">
+        <li className="hover:text-cyan-800 hover:underline">
           <Link to="/">Home</Link>
         </li>
         <li className="hover:text-cyan-800 hover:underline">
