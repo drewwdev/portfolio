@@ -17,7 +17,7 @@ const portfolioData = [
       </p>
     ),
     src: Reactocat,
-    url: "/portfolio/reactocats",
+    slug: "reactocats",
     alt: "Screenshot of cloned website.",
   },
   {
@@ -37,7 +37,7 @@ const portfolioData = [
       </p>
     ),
     src: Cryptoticker,
-    url: "/portfolio/cryptoticker",
+    slug: "cryptoticker",
     alt: "Screenshot of cryptotracking website.",
   },
   {
@@ -51,7 +51,7 @@ const portfolioData = [
       </p>
     ),
     src: CoffeeCrumbs,
-    url: "/portfolio/coffee-crumbs",
+    slug: "coffee-crumbs",
     alt: "Screenshot of Coffee Crumbs website.",
   },
 ];

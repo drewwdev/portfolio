@@ -19,7 +19,7 @@ function Portfolio() {
                   </a>
                   {data.description}
                 </div>
-                <Link to={data.url}>
+                <Link to={data.slug}>
                   <img className="w-96" alt={data.alt} src={data.src} />
                 </Link>
               </li>
