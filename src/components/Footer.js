@@ -1,4 +1,5 @@
 import React from "react";
+import headshot from "../images/headshot.jpg";
 
 function Footer() {
   return (
@@ -7,7 +8,7 @@ function Footer() {
         <img
           className="w-40 h-40 mx-4 my-8 rounded-full"
           alt="Headshot of Drew Wilson"
-          src="https://media-exp1.licdn.com/dms/image/C4E03AQE1pJH8HvpsYQ/profile-displayphoto-shrink_800_800/0/1633964417957?e=1646870400&v=beta&t=VqJFqMtKKB3MiNxbrnrKdtmp7TPSs_eiBgjcU5fQcK8"
+          src={headshot}
         />
         <div className="flex-col">
           <p className="flex flex-wrap my-8">
