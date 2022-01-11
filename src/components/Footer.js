@@ -6,6 +6,7 @@ function Footer() {
     <div className="mt-auto bg-slate-700 text-white h-auto">
       <div className="flex sm:mx-40 justify-center">
         <img
+          w=""
           className="w-40 h-40 mx-4 my-8 rounded-full"
           alt="Headshot of Drew Wilson"
           src={headshot}
@@ -16,12 +17,12 @@ function Footer() {
             applications that are functional and accessible.
           </p>
           <ul className="my-8">
-            <li>
+            <li className="my-2">
               <a className="underline" href="https://github.com/drewwdev">
                 Github
               </a>
             </li>
-            <li>
+            <li className="my-2">
               <a
                 className="underline"
                 href="https://www.linkedin.com/in/drewwdev/"
