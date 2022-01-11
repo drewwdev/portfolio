@@ -11,7 +11,10 @@ function Header() {
       <div className="flex space-x-4">
         {header.map((data) => {
           return (
-            <h1 className=" hover:text-cyan-800 hover:underline">
+            <h1
+              key={data.title}
+              className=" hover:text-cyan-800 hover:underline"
+            >
               <Link to={data.link}>{data.title}</Link>
             </h1>
           );
