@@ -1,5 +1,5 @@
 import React from "react";
-import portfolioData from "../content/portfolioData";
+import portfolio from "../content/portfolio";
 import { Link } from "react-router-dom";
 
 function Portfolio() {
@@ -10,7 +10,7 @@ function Portfolio() {
       </p>
       <div className="flex justify-center">
         <ul className="flex-col">
-          {portfolioData.map((data) => {
+          {portfolio.map((data) => {
             return (
               <li className="sm:flex my-8">
                 <div className="w-96 my-8">

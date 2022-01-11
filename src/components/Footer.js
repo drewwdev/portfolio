@@ -7,6 +7,7 @@ function Footer() {
       <div className="flex sm:mx-40 justify-center">
         <img
           w=""
+          h=""
           className="w-40 h-40 mx-4 my-8 rounded-full"
           alt="Headshot of Drew Wilson"
           src={headshot}

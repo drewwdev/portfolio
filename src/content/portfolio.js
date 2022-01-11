@@ -1,8 +1,9 @@
 import Reactocat from "../images/reacto-cats.png";
 import Cryptoticker from "../images/cryptoticker.png";
 import CoffeeCrumbs from "../images/coffee-crumbs.png";
+import Portfolio from "../images/lighthouse.png";
 
-const portfolioData = [
+const portfolio = [
   {
     title: "Reactocats",
     link: "https://dwilson-reactocats.netlify.app/",
@@ -54,6 +55,19 @@ const portfolioData = [
     slug: "coffee-crumbs",
     alt: "Screenshot of Coffee Crumbs website.",
   },
+  {
+    title: "This portfolio",
+    link: "https://dreww.dev",
+    description: (
+      <p>
+        I just wanted to point out that this portfolio site scores a 100 across
+        the board in Google's Lighthouse tool.
+      </p>
+    ),
+    src: Portfolio,
+    slug: "portfolio",
+    alt: "Screenshot of Google Lighthouse report for my portfolio",
+  },
 ];
 
-export default portfolioData;
+export default portfolio;
