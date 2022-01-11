@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import header from "../content/header";
 
 function Header() {
   return (
@@ -7,20 +8,15 @@ function Header() {
       <Link className="hover:text-cyan-800" to="/">
         Drew Wilson
       </Link>
-      <ul className="flex space-x-4">
-        <li className="hover:text-cyan-800 hover:underline">
-          <Link to="/">Home</Link>
-        </li>
-        <li className="hover:text-cyan-800 hover:underline">
-          <Link to="/portfolio">Portfolio</Link>
-        </li>
-        <li className="hover:text-cyan-800 hover:underline">
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li className="hover:text-cyan-800 hover:underline">
-          <Link to="/about">About</Link>
-        </li>
-      </ul>
+      <div className="flex space-x-4">
+        {header.map((data) => {
+          return (
+            <h1 className=" hover:text-cyan-800 hover:underline">
+              <Link to={data.link}>{data.title}</Link>
+            </h1>
+          );
+        })}
+      </div>
     </div>
   );
 }
