@@ -6,7 +6,7 @@ import Portfolio from "../images/lighthouse.png";
 const portfolio = [
   {
     title: "Reactocats",
-    link: "https://dwilson-reactocats.netlify.app/",
+    url: "https://dwilson-reactocats.netlify.app/",
     description: (
       <p>
         This is a clone website that I made at Suncoast Developer's Guild as a
@@ -23,7 +23,7 @@ const portfolio = [
   },
   {
     title: "CryptoTicker",
-    link: "https://dwilson-cryptotracker.netlify.app",
+    url: "https://dwilson-cryptotracker.netlify.app",
     description: (
       <p>
         This is a crypto tracking website that I made at Suncoast Developer's
@@ -43,7 +43,7 @@ const portfolio = [
   },
   {
     title: "Coffee Crumbs",
-    link: "https://bakeriesandcoffeeshops.herokuapp.com",
+    url: "https://bakeriesandcoffeeshops.herokuapp.com",
     description: (
       <p>
         This is a full stack CRUD web application that I made at Suncoast
@@ -57,7 +57,7 @@ const portfolio = [
   },
   {
     title: "This portfolio",
-    link: "https://dreww.dev",
+    url: "https://dreww.dev",
     description: (
       <p>
         I just wanted to point out that this portfolio site scores a 100 across

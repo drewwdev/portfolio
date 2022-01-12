@@ -10,21 +10,23 @@ function Portfolio() {
       </p>
       <div className="flex justify-center">
         <ul className="flex-col">
-          {portfolio.map((data) => {
-            return (
-              <li className="sm:flex my-8">
-                <div className="w-96 my-8">
-                  <a href={data.link} className="font-bold underline">
-                    {data.title}
-                  </a>
-                  {data.description}
-                </div>
-                <Link to={data.slug}>
-                  <img className="w-96" alt={data.alt} src={data.src} />
-                </Link>
-              </li>
-            );
-          })}
+          {Object.entries(portfolio).map(
+            ([slug, { title, url, description, alt, src }]) => {
+              return (
+                <li key={slug} className="sm:flex my-8">
+                  <div className="w-96 my-8">
+                    <a href={url} className="font-bold underline">
+                      {title}
+                    </a>
+                    {description}
+                  </div>
+                  <Link to={`/portfolio/${slug}`}>
+                    <img className="w-96" alt={alt} src={src} />
+                  </Link>
+                </li>
+              );
+            }
+          )}
         </ul>
       </div>
     </div>
