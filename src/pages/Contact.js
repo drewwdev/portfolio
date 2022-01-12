@@ -1,5 +1,5 @@
 import React from "react";
-import contact from "../content/contact";
+import contact from "../data/contactData";
 
 function Contact() {
   return (

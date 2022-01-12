@@ -1,5 +1,5 @@
 import React from "react";
-import portfolio from "../content/portfolio";
+import portfolio from "../data/portfolioData";
 import { Link } from "react-router-dom";
 
 function Portfolio() {
