@@ -1,16 +1,17 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Portfolio from "./Portfolio";
+import portfolio from "../data/portfolioData";
 
 function Details() {
   const { slug } = useParams();
-  const project = Portfolio[slug];
-  const { title, description } = project;
+  const project = portfolio[slug];
+  console.log(project);
+  const { title, url, description, src, alt } = project;
   return (
     <div className="flex justify-center">
       <div>
         <div className="mx-4">
-          <button>View website</button>
+          <a href={url}>View website</a>
           <p>Technologies used</p>
           <ul>
             <li>Technology 1</li>

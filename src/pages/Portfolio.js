@@ -1,6 +1,6 @@
 import React from "react";
 import portfolio from "../data/portfolioData";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 function Portfolio() {
   return (
@@ -27,6 +27,7 @@ function Portfolio() {
               );
             }
           )}
+          <Outlet />
         </ul>
       </div>
     </div>
