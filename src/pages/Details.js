@@ -1,20 +1,26 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import portfolio from "../data/portfolioData";
 
 function Details() {
   const { slug } = useParams();
   const project = portfolio[slug];
-  const { title, url, description, src, alt } = project;
+  const { title, url, description, src, alt, technologies } = project;
   return (
     <div className="flex justify-center">
       <div>
         <div className="mx-4">
-          <a href={url}>View website</a>
+          <a
+            className="bg-cyan-600 hover:bg-cyan-800 px-6 py-2 m-2 text-white"
+            href={url}
+          >
+            View website
+          </a>
           <p>Technologies used</p>
           <ul>
-            <li>Technology 1</li>
-            <li>Technology 2</li>
+            {technologies.map((data) => {
+              return <li>{data}</li>;
+            })}
           </ul>
         </div>
         <div className="mx-4">
@@ -27,7 +33,7 @@ function Details() {
           </div>
           <p>more content</p>
           <div>maybe a youtube video walkthrough</div>
-          <button>Contact me</button>
+          <Link to="/contact">Contact me</Link>
         </div>
       </div>
     </div>

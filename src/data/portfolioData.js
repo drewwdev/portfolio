@@ -20,6 +20,7 @@ const portfolio = [
     src: Reactocat,
     slug: "reactocats",
     alt: "Screenshot of cloned website.",
+    technologies: ["React", "Javascript", "Typescript", "SCSS", "HTML", "CSS"],
   },
   {
     title: "CryptoTicker",
@@ -40,6 +41,14 @@ const portfolio = [
     src: Cryptoticker,
     slug: "cryptoticker",
     alt: "Screenshot of cryptotracking website.",
+    technologies: [
+      "React Hooks",
+      "Fetch",
+      "Typescript",
+      "SCSS",
+      "Javascript",
+      "HTML",
+    ],
   },
   {
     title: "Coffee Crumbs",
@@ -54,6 +63,17 @@ const portfolio = [
     src: CoffeeCrumbs,
     slug: "coffee-crumbs",
     alt: "Screenshot of Coffee Crumbs website.",
+    technologies: [
+      "React Hooks",
+      "Fetch",
+      "API",
+      "C#",
+      "Typescript",
+      "HTML",
+      "SCSS",
+      "Javascript",
+      "SQL",
+    ],
   },
   {
     title: "This portfolio",
@@ -67,6 +87,13 @@ const portfolio = [
     src: Portfolio,
     slug: "portfolio",
     alt: "Screenshot of Google Lighthouse report for my portfolio",
+    technologies: [
+      "Javascript",
+      "React Hooks",
+      "React Router V6",
+      "HTML",
+      "TailwindCSS",
+    ],
   },
 ];
 
