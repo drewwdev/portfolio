@@ -5,7 +5,6 @@ import portfolio from "../data/portfolioData";
 function Details() {
   const { slug } = useParams();
   const project = portfolio[slug];
-  console.log(project);
   const { title, url, description, src, alt } = project;
   return (
     <div className="flex justify-center">
