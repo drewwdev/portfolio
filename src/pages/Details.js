@@ -5,36 +5,34 @@ import portfolio from "../data/portfolioData";
 function Details() {
   const { slug } = useParams();
   const project = portfolio[slug];
-  const { title, url, description, src, alt, technologies } = project;
+  const { title, url, description, mobilesrc, desktopsrc, alt, technologies } =
+    project;
   return (
-    <div className="flex justify-center">
-      <div>
-        <div className="mx-4">
-          <a
-            className="bg-cyan-600 hover:bg-cyan-800 px-6 py-2 m-2 text-white"
-            href={url}
-          >
-            View website
-          </a>
-          <p>Technologies used</p>
-          <ul>
-            {technologies.map((data) => {
-              return <li>{data}</li>;
-            })}
-          </ul>
+    <div className="flex justify-center w-auto sm:mx-44 mt-20 mx-12">
+      <div className="w-96">
+        <a
+          className="bg-cyan-600 hover:bg-cyan-800 px-6 py-2 m-2 text-white"
+          href={url}
+        >
+          View website
+        </a>
+        <p>Technologies used</p>
+        <ul>
+          {technologies.map((data) => {
+            return <li>{data}</li>;
+          })}
+        </ul>
+      </div>
+      <div className="mx-4 w-96">
+        <h2 className="font-bold text-2xl">{title}</h2>
+        <h3>{description}</h3>
+        <div className="md:flex-col">
+          <img className="m-4" src={desktopsrc} alt={alt} />
+          <img className="m-4" src={mobilesrc} alt={alt} />
         </div>
-        <div className="mx-4">
-          <h2>{title}</h2>
-          <h3>Subtitle</h3>
-          <p>{description}</p>
-          <div className="flex">
-            <div>desktop image</div>
-            <div>mobile image</div>
-          </div>
-          <p>more content</p>
-          <div>maybe a youtube video walkthrough</div>
-          <Link to="/contact">Contact me</Link>
-        </div>
+        <Link className="hover:text-cyan-600 hover:font-bold" to="/contact">
+          Contact me
+        </Link>
       </div>
     </div>
   );

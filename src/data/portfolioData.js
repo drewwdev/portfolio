@@ -1,6 +1,7 @@
-import Reactocat from "../images/reacto-cats.png";
-import Cryptoticker from "../images/cryptoticker.png";
-import CoffeeCrumbs from "../images/coffee-crumbs.png";
+import ReactocatMobile from "../images/reacto-cats-mobile.png";
+import ReactocatDesktop from "../images/reacto-cats-desktop.png";
+import CryptotickerMobile from "../images/cryptoticker-mobile.png";
+import CoffeeCrumbsMobile from "../images/coffee-crumbs-mobile.png";
 import Portfolio from "../images/lighthouse.png";
 
 const portfolio = [
@@ -17,7 +18,8 @@ const portfolio = [
         site by Github. It was made with mobile first design in mind.
       </p>
     ),
-    src: Reactocat,
+    mobilesrc: ReactocatMobile,
+    desktopsrc: ReactocatDesktop,
     slug: "reactocats",
     alt: "Screenshot of cloned website.",
     technologies: ["React", "Javascript", "Typescript", "SCSS", "HTML", "CSS"],
@@ -38,7 +40,7 @@ const portfolio = [
         crypto API. It was made with mobile first design in mind as well.
       </p>
     ),
-    src: Cryptoticker,
+    mobilesrc: CryptotickerMobile,
     slug: "cryptoticker",
     alt: "Screenshot of cryptotracking website.",
     technologies: [
@@ -60,7 +62,7 @@ const portfolio = [
         was made with mobile first design in mind as well.
       </p>
     ),
-    src: CoffeeCrumbs,
+    mobilesrc: CoffeeCrumbsMobile,
     slug: "coffee-crumbs",
     alt: "Screenshot of Coffee Crumbs website.",
     technologies: [
@@ -84,7 +86,7 @@ const portfolio = [
         the board in Google's Lighthouse tool.
       </p>
     ),
-    src: Portfolio,
+    mobilesrc: Portfolio,
     slug: "portfolio",
     alt: "Screenshot of Google Lighthouse report for my portfolio",
     technologies: [
