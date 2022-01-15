@@ -11,13 +11,13 @@ function Details() {
     <div className="flex justify-center w-auto sm:mx-44 mt-20 mx-12">
       <div className="w-96">
         <a
-          className="bg-cyan-600 hover:bg-cyan-800 px-6 py-2 m-2 text-white"
+          className="bg-cyan-600 hover:bg-cyan-800 px-6 py-2 m-2 text-white whitespace-nowrap"
           href={url}
         >
           View website
         </a>
-        <p>Technologies used</p>
-        <ul>
+        <p className="mt-4">Technologies used</p>
+        <ul className="mt-4 list-disc">
           {technologies.map((data) => {
             return <li>{data}</li>;
           })}
@@ -27,12 +27,17 @@ function Details() {
         <h2 className="font-bold text-2xl">{title}</h2>
         <h3>{description}</h3>
         <div className="md:flex-col">
-          <img className="m-4" src={desktopsrc} alt={alt} />
-          <img className="m-4" src={mobilesrc} alt={alt} />
+          <img w="" h="" className="m-4" src={desktopsrc} alt={alt} />
+          <img w="" h="" className="m-4" src={mobilesrc} alt={alt} />
         </div>
-        <Link className="hover:text-cyan-600 hover:font-bold" to="/contact">
-          Contact me
-        </Link>
+        <div className="flex-col text-center my-4">
+          <Link
+            className="hover:text-cyan-600 bg-cyan-600 hover:bg-cyan-800 py-2 px-6 m-2 text-white whitespace-nowrap"
+            to="/contact"
+          >
+            Contact me
+          </Link>
+        </div>
       </div>
     </div>
   );

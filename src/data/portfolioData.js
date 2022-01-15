@@ -1,8 +1,11 @@
 import ReactocatMobile from "../images/reacto-cats-mobile.png";
 import ReactocatDesktop from "../images/reacto-cats-desktop.png";
 import CryptotickerMobile from "../images/cryptoticker-mobile.png";
+import CryptotickerDesktop from "../images/cryptoticker-desktop.png";
 import CoffeeCrumbsMobile from "../images/coffee-crumbs-mobile.png";
+import CoffeeCrumbsDesktop from "../images/coffee-crumbs-desktop.png";
 import Portfolio from "../images/lighthouse.png";
+import PortfolioDesktop from "../images/portfolio-desktop.png";
 
 const portfolio = [
   {
@@ -41,6 +44,7 @@ const portfolio = [
       </p>
     ),
     mobilesrc: CryptotickerMobile,
+    desktopsrc: CryptotickerDesktop,
     slug: "cryptoticker",
     alt: "Screenshot of cryptotracking website.",
     technologies: [
@@ -63,6 +67,7 @@ const portfolio = [
       </p>
     ),
     mobilesrc: CoffeeCrumbsMobile,
+    desktopsrc: CoffeeCrumbsDesktop,
     slug: "coffee-crumbs",
     alt: "Screenshot of Coffee Crumbs website.",
     technologies: [
@@ -87,6 +92,7 @@ const portfolio = [
       </p>
     ),
     mobilesrc: Portfolio,
+    desktopsrc: PortfolioDesktop,
     slug: "portfolio",
     alt: "Screenshot of Google Lighthouse report for my portfolio",
     technologies: [
