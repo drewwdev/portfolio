@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c53b5ce.css",
-    "main.js": "/static/js/main.63806484.js",
-    "static/media/reacto-cats.png": "/static/media/reacto-cats.d1a88b03c7a80fd97b79.png",
-    "static/media/coffee-crumbs.png": "/static/media/coffee-crumbs.0f8664a99df80bfbdd12.png",
+    "main.css": "/static/css/main.c7887273.css",
+    "main.js": "/static/js/main.1592b7aa.js",
+    "static/media/reacto-cats-desktop.png": "/static/media/reacto-cats-desktop.8a1f9130f4f87395de7d.png",
+    "static/media/reacto-cats-mobile.png": "/static/media/reacto-cats-mobile.d1a88b03c7a80fd97b79.png",
+    "static/media/portfolio-desktop.png": "/static/media/portfolio-desktop.96ad42fa6bebca13a890.png",
+    "static/media/coffee-crumbs-desktop.png": "/static/media/coffee-crumbs-desktop.50ed5ab7a6c59b7eccdd.png",
+    "static/media/cryptoticker-desktop.png": "/static/media/cryptoticker-desktop.cbe6ba45c653ec064047.png",
+    "static/media/coffee-crumbs-mobile.png": "/static/media/coffee-crumbs-mobile.0f8664a99df80bfbdd12.png",
     "static/media/lighthouse.png": "/static/media/lighthouse.71bc02c3a84a52058d44.png",
     "static/media/headshot.jpg": "/static/media/headshot.eaa23d38def8ac620b12.jpg",
-    "static/media/cryptoticker.png": "/static/media/cryptoticker.3d89cd4b6891e8cab470.png",
+    "static/media/cryptoticker-mobile.png": "/static/media/cryptoticker-mobile.3d89cd4b6891e8cab470.png",
     "index.html": "/index.html",
-    "main.3c53b5ce.css.map": "/static/css/main.3c53b5ce.css.map",
-    "main.63806484.js.map": "/static/js/main.63806484.js.map"
+    "main.c7887273.css.map": "/static/css/main.c7887273.css.map",
+    "main.1592b7aa.js.map": "/static/js/main.1592b7aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c53b5ce.css",
-    "static/js/main.63806484.js"
+    "static/css/main.c7887273.css",
+    "static/js/main.1592b7aa.js"
   ]
 }
