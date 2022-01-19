@@ -15,7 +15,7 @@ const portfolio = [
       <p>
         This is a clone website that I made at Suncoast Developer's Guild as a
         homework assignment. It is based off of{" "}
-        <a className="underline font-bold" href="https://octodex.github.com">
+        <a className="font-bold underline" href="https://octodex.github.com">
           this
         </a>{" "}
         site by Github. It was made with mobile first design in mind.
@@ -35,7 +35,7 @@ const portfolio = [
         This is a crypto tracking website that I made at Suncoast Developer's
         Guild as a homework assignment. It pulls JSON data from{" "}
         <a
-          className="underline font-bold"
+          className="font-bold underline"
           href="https://api.coincap.io/v2/assets"
         >
           this

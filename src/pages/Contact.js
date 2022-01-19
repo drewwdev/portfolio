@@ -4,7 +4,7 @@ import contact from "../data/contactData";
 function Contact() {
   return (
     <div className="flex flex-col items-center my-20">
-      <p className="font-bold text-4xl">Contact me</p>
+      <p className="text-4xl font-bold">Contact me</p>
       <ul className="flex-col">
         {contact.map((data) => {
           return (

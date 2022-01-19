@@ -2,7 +2,7 @@ import React from "react";
 
 function Title() {
   return (
-    <div className="font-bold text-center mt-20 text-4xl">
+    <div className="mt-20 text-4xl font-bold text-center">
       Hello, my name is Drew.
     </div>
   );

@@ -4,7 +4,7 @@ import header from "../data/headerData";
 
 function Header() {
   return (
-    <div className="sm:flex justify-between m-4 mx-12 text-cyan-600 text-lg font-bold">
+    <div className="justify-between m-4 mx-12 text-lg font-bold sm:flex text-cyan-600">
       <Link className="hover:text-cyan-800" to="/">
         Drew Wilson
       </Link>

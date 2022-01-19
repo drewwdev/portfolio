@@ -3,8 +3,8 @@ import headshot from "../images/headshot.jpg";
 
 function Footer() {
   return (
-    <div className="mt-auto bg-slate-700 text-white h-auto">
-      <div className="flex sm:mx-40 justify-center">
+    <div className="h-auto mt-auto text-white bg-slate-700">
+      <div className="flex justify-center sm:mx-40">
         <img
           w=""
           h=""

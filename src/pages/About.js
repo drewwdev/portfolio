@@ -2,9 +2,9 @@ import React from "react";
 
 function About() {
   return (
-    <div className="flex-col w-auto sm:mx-44 mx-12">
-      <p className="font-bold text-center mt-20 text-4xl">About me</p>
-      <p className="sm:mx-28 mx-12 my-4 text-center text-lg">
+    <div className="flex-col w-auto mx-12 sm:mx-44">
+      <p className="mt-20 text-4xl font-bold text-center">About me</p>
+      <p className="mx-12 my-4 text-lg text-center sm:mx-28">
         My name is Drew Wilson. I am a front-end web developer. I am originally
         from Oklahoma and now live in St Petersburg, Florida. I am currently
         going to St Petersburg College where I am getting my Associate in Arts.
